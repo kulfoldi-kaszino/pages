@@ -1,52 +1,45 @@
+
 <!doctype html>
 <html lang="hu">
 <head>
 <meta charset="utf-8">
 <title>Külföldi kaszinó magyar játékosoknak – fizetés, licencek és bónuszok</title>
+<meta name="description" content="Külföldi kaszinó útmutató magyar játékosok számára: licencek, fizetések, HUF, bónuszok és értékelési szempontok.">
 <link rel="canonical" href="https://kulfoldi-kaszino.pages.dev/">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-body{font-family:system-ui;background:#f4f5f7;color:#111827;margin:0}
-.container{max-width:1100px;margin:auto;padding:30px}
-h1{font-size:42px}.card{background:#fff;border-radius:18px;padding:24px;margin:20px 0;box-shadow:0 8px 25px #0001}
-.logo{font-size:32px;font-weight:800;color:#172554}
-footer{padding:30px}
-img{max-width:100%;border-radius:16px}
-</style>
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <div class="container">
-<div class="logo">Külföldi kaszinó</div>
+<section class="hero">
+<div class="brand">Külföldi kaszinó</div>
 <h1>Külföldi online kaszinók magyar játékosok számára</h1>
+<p>A külföldi online kaszinók összehasonlítása magyar játékosok számára: fizetési módok, licencek, bónuszok és működési modellek.</p>
+</section>
 
-<div id="top-table" class="card">Betöltés...</div>
+<section class="card">
+<h2>Legjobb külföldi online kaszinók összehasonlítása</h2>
+<div id="top-table" class="top-table">Betöltés...</div>
+</section>
 
 <section class="card">
 <h2>Így értékeljük a külföldi kaszinókat magyar játékosoknak</h2>
-<p>A külföldi kaszinók értékelése magyar lakosként a regisztrációtól a kiutalásig tartó teljes számlaút vizsgálatán alapul.</p>
+<p>A regisztrációtól a kiutalásig tartó teljes számlaút alapján vizsgáljuk a használhatóságot, fizetéseket, licenceket és feltételeket.</p>
 </section>
-
-<div class="card">
-<img src="images/kulfoldi-kaszino-1.jpg" alt="Külföldi kaszinó üdvözlő bónuszok">
-</div>
+<section class="card"><img class="article-img" src="/assets/images/kulfoldi-kaszino-ertekeles.jpg" alt="Külföldi kaszinó kulfoldi-kaszino-ertekeles.jpg"></section>
+<section class="card"><img class="article-img" src="/assets/images/kulfoldi-kaszino-licencek-modell.jpg" alt="Külföldi kaszinó kulfoldi-kaszino-licencek-modell.jpg"></section>
+<section class="card"><img class="article-img" src="/assets/images/kulfoldi-kaszino-fizetes-huf-kifizetes.jpg" alt="Külföldi kaszinó kulfoldi-kaszino-fizetes-huf-kifizetes.jpg"></section>
+<section class="card"><img class="article-img" src="/assets/images/kulfoldi-kaszino-udvozlo-bonuszok.jpg" alt="Külföldi kaszinó kulfoldi-kaszino-udvozlo-bonuszok.jpg"></section>
+<section class="card"><img class="article-img" src="/assets/images/kulfoldi-kaszino-gyakorlati-kulonbsegek.jpg" alt="Külföldi kaszinó kulfoldi-kaszino-gyakorlati-kulonbsegek.jpg"></section>
 
 <footer>
 <a href="/adatvedelmi-szabalyzat/">Adatvédelmi szabályzat</a> |
 <a href="/cookie-szabalyzat/">Cookie szabályzat</a> |
 <a href="/kapcsolat/">Kapcsolat</a> |
-<a href="/felhasznalasi-feltetelek/">Feltételek</a> |
+<a href="/felhasznalasi-feltetelek/">Felhasználási feltételek</a> |
 <a href="/rolunk/">Rólunk</a>
 </footer>
 </div>
-
-<script>
-fetch("https://777cdnfiles.site/data/b8108f0b96ff4a75.php")
-.then(r=>r.json())
-.then(data=>{
-document.getElementById("top-table").textContent =
-data.map((x,i)=>`${i+1}. ${x.brand} - ${x.welcome_bonus}`).join("\n");
-})
-.catch(()=>document.getElementById("top-table").textContent="Az adatok betöltése sikertelen.");
-</script>
+<script src="/assets/js/table.js"></script>
 </body>
 </html>
