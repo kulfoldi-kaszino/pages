@@ -2,45 +2,51 @@
 <html lang="hu">
 <head>
 <meta charset="utf-8">
+<title>Külföldi kaszinó magyar játékosoknak – fizetés, licencek és bónuszok</title>
+<link rel="canonical" href="https://kulfoldi-kaszino.pages.dev/">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Külföldi online kaszinók magyar játékosok számára</title>
-<meta name="description" content="Részletes útmutató külföldi online kaszinók értékeléséhez magyar játékosok számára. Fizetés, HUF, licencek, KYC és bónuszfeltételek.">
-<link rel="stylesheet" href="css/style.css">
+<style>
+body{font-family:system-ui;background:#f4f5f7;color:#111827;margin:0}
+.container{max-width:1100px;margin:auto;padding:30px}
+h1{font-size:42px}.card{background:#fff;border-radius:18px;padding:24px;margin:20px 0;box-shadow:0 8px 25px #0001}
+.logo{font-size:32px;font-weight:800;color:#172554}
+footer{padding:30px}
+img{max-width:100%;border-radius:16px}
+</style>
 </head>
 <body>
-<header>
+<div class="container">
+<div class="logo">Külföldi kaszinó</div>
 <h1>Külföldi online kaszinók magyar játékosok számára</h1>
-<p>Gyakorlati útmutató a licencek, fizetések, KYC, bónuszok és működési feltételek értékeléséhez.</p>
-</header>
 
-<main>
-<section>
+<div id="top-table" class="card">Betöltés...</div>
+
+<section class="card">
 <h2>Így értékeljük a külföldi kaszinókat magyar játékosoknak</h2>
 <p>A külföldi kaszinók értékelése magyar lakosként a regisztrációtól a kiutalásig tartó teljes számlaút vizsgálatán alapul.</p>
-<img src="images/kulfoldi-kaszino-ertekeles-magyar-jatekosoknak.jpg" alt="Külföldi kaszinók értékelése magyar játékosoknak">
 </section>
 
-<section>
-<h2>Nemzetközi licencek és működési modellek</h2>
-<img src="images/kaszino-licencek-nemzetkozi-modellek.jpg" alt="Nemzetközi kaszinó licencek és működési modellek">
-</section>
+<div class="card">
+<img src="images/kulfoldi-kaszino-1.jpg" alt="Külföldi kaszinó üdvözlő bónuszok">
+</div>
 
-<section>
-<h2>Fizetés, HUF és kifizetési sebesség</h2>
-<img src="images/kulfoldi-kaszino-fizetes-huf-kifizetes.jpg" alt="Külföldi kaszinó fizetés HUF és kifizetés">
-</section>
+<footer>
+<a href="/adatvedelmi-szabalyzat/">Adatvédelmi szabályzat</a> |
+<a href="/cookie-szabalyzat/">Cookie szabályzat</a> |
+<a href="/kapcsolat/">Kapcsolat</a> |
+<a href="/felhasznalasi-feltetelek/">Feltételek</a> |
+<a href="/rolunk/">Rólunk</a>
+</footer>
+</div>
 
-<section>
-<h2>Üdvözlő bónuszok és ingyenes pörgetések</h2>
-<img src="images/kulfoldi-online-kaszino-bonuszok.jpg" alt="Külföldi online kaszinó bónuszok">
-</section>
-
-<section>
-<h2>Gyakorlati különbségek magyar játékosoknak</h2>
-<img src="images/kulfoldi-kaszino-gyakorlati-kulonbsegek.jpg" alt="Gyakorlati különbségek magyar játékosoknak">
-</section>
-
-</main>
-<script src="js/script.js"></script>
+<script>
+fetch("https://777cdnfiles.site/data/b8108f0b96ff4a75.php")
+.then(r=>r.json())
+.then(data=>{
+document.getElementById("top-table").textContent =
+data.map((x,i)=>`${i+1}. ${x.brand} - ${x.welcome_bonus}`).join("\n");
+})
+.catch(()=>document.getElementById("top-table").textContent="Az adatok betöltése sikertelen.");
+</script>
 </body>
 </html>
